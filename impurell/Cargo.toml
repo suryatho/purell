@@ -1,0 +1,14 @@
+[package]
+name = "impurell"
+version = "0.1.0"
+edition = "2024"
+description = "An ahead-of-time compiler for purell, targeting LLVM"
+
+[[bin]]
+name = "impurell"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+lto = true
